@@ -191,7 +191,7 @@ func (TLSSettings_TLSmode) EnumDescriptor() ([]byte, []int) {
 //   subsets:
 //   - name: testversion
 //     labels:
-//       version: v3
+//       app.kubernetes.io/version: v3
 //     trafficPolicy:
 //       loadBalancer:
 //         simple: ROUND_ROBIN
@@ -430,7 +430,7 @@ func (m *TrafficPolicy_PortTrafficPolicy) GetTls() *TLSSettings {
 //   subsets:
 //   - name: testversion
 //     labels:
-//       version: v3
+//       app.kubernetes.io/version: v3
 //     trafficPolicy:
 //       loadBalancer:
 //         simple: ROUND_ROBIN
