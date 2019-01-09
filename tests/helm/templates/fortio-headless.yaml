@@ -8,7 +8,7 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: fortio-headless
+        app: fortio-headless
     spec:
       containers:
       - name: echosrv
@@ -32,4 +32,4 @@ spec:
   - port: 8079
     name: grpc-ping
   selector:
-    app.kubernetes.io/name: fortio-headless
+    app: fortio-headless

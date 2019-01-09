@@ -113,9 +113,9 @@
                                                 "source.labels": {
                                                     "string_map_value": {
                                                         "entries": {
-                                                            "app.kubernetes.io/name": "details",
+                                                            "app": "details",
                                                             "pod-template-hash": "57643725",
-                                                            "app.kubernetes.io/version": "v1"
+                                                            "version": "v1"
                                                         }
                                                     }
                                                 },
@@ -136,9 +136,9 @@
                                                         "destination.labels": {
                                                             "string_map_value": {
                                                                 "entries": {
-                                                                    "app.kubernetes.io/name": "details",
+                                                                    "app": "details",
                                                                     "pod-template-hash": "57643725",
-                                                                    "app.kubernetes.io/version": "v1"
+                                                                    "version": "v1"
                                                                 }
                                                             }
                                                         },

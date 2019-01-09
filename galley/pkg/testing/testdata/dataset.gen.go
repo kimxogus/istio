@@ -636,10 +636,10 @@ spec:
   subsets:
   - name: v1
     labels:
-      app.kubernetes.io/version: v1
+      version: v1
   - name: v2
     labels:
-      app.kubernetes.io/version: v2
+      version: v2
 `)
 
 func datasetNetworkingIstioIoV1alpha3DestinationruleYamlBytes() ([]byte, error) {
@@ -669,13 +669,13 @@ var _datasetNetworkingIstioIoV1alpha3Destinationrule_expectedJson = []byte(`{
         "subsets": [
           {
             "labels": {
-              "app.kubernetes.io/version": "v1"
+              "version": "v1"
             },
             "name": "v1"
           },
           {
             "labels": {
-              "app.kubernetes.io/version": "v2"
+              "version": "v2"
             },
             "name": "v2"
           }

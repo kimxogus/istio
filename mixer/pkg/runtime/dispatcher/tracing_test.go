@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/gogo/googleapis/google/rpc"
-	opentracing "github.com/opentracing/opentracing-go"
+	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/log"
 
 	"istio.io/istio/mixer/pkg/adapter"

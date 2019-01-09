@@ -20,13 +20,13 @@ kind: Service
 metadata:
   name: tcp-echo
   labels:
-    app.kubernetes.io/name: tcp-echo
+    app: tcp-echo
 spec:
   ports:
   - name: tcp
     port: 9000
   selector:
-    app.kubernetes.io/name: tcp-echo
+    app: tcp-echo
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -37,8 +37,8 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: tcp-echo
-        app.kubernetes.io/version: v1
+        app: tcp-echo
+        version: v1
     spec:
       containers:
       - name: tcp-echo

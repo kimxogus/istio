@@ -20,13 +20,13 @@ kind: Service
 metadata:
   name: details
   labels:
-    app.kubernetes.io/name: details
+    app: details
 spec:
   ports:
   - port: 9080
     name: http
   selector:
-    app.kubernetes.io/name: details
+    app: details
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -37,8 +37,8 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: details
-        app.kubernetes.io/version: v1
+        app: details
+        version: v1
     spec:
       containers:
       - name: details
@@ -55,13 +55,13 @@ kind: Service
 metadata:
   name: reviews
   labels:
-    app.kubernetes.io/name: reviews
+    app: reviews
 spec:
   ports:
   - port: 9080
     name: http
   selector:
-    app.kubernetes.io/name: reviews
+    app: reviews
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -72,8 +72,8 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: reviews
-        app.kubernetes.io/version: v1
+        app: reviews
+        version: v1
     spec:
       containers:
       - name: reviews
@@ -90,13 +90,13 @@ kind: Service
 metadata:
   name: productpage
   labels:
-    app.kubernetes.io/name: productpage
+    app: productpage
 spec:
   ports:
   - port: 9080
     name: http
   selector:
-    app.kubernetes.io/name: productpage
+    app: productpage
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -107,8 +107,8 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: productpage
-        app.kubernetes.io/version: v1
+        app: productpage
+        version: v1
     spec:
       containers:
       - name: productpage

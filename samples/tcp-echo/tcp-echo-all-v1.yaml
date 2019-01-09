@@ -36,10 +36,10 @@ spec:
   subsets:
   - name: v1
     labels:
-      app.kubernetes.io/version: v1
+      version: v1
   - name: v2
     labels:
-      app.kubernetes.io/version: v2
+      version: v2
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
